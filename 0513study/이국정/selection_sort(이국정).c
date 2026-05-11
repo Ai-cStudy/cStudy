@@ -7,12 +7,26 @@
 
 int main(void)
 {
-	int arr[10];
-	int i = 0;
-	int size = sizeof(arr) / sizeof(int);
+	int arr[100] = { 0 };
+	int n = 0;
+	int i;
+
+	do
+	{
+		printf("input number of integers : ");
+		scanf("%d", &n);
+
+		if (n < 1 || n > 100)
+		{
+			printf("long number, retry ");
+			continue;
+		}		
+	}while (n < 1 || n > 100);
+
+	int size = n;	
 	int index = 0;
 	
-	printf("input 5 number : ");
+	printf("input  number : ");
 
 	for (i = 0; i < size; i++)
 	{
@@ -34,7 +48,7 @@ int main(void)
 		arr[min_index] = temp;
 	}
 
-	for (i = 0; i < 5; i++)
+	for (i = 0; i < size; i++)
 	{
 		printf("%d", arr[i]);
 	}

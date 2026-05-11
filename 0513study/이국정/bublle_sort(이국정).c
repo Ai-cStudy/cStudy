@@ -8,8 +8,22 @@
 
 int main(void)
 {
-	int arr[10] = { 0 };
-	int size = sizeof(arr) / sizeof(int);
+	int arr[100] = { 0 };
+	int n = 0;
+
+	do
+	{
+		printf("input number of integers : ");
+		scanf("%d", &n);
+
+		if (n < 1 || n > 100)
+		{
+			printf("long number, retry ");
+			continue;
+		}		
+	}while (n < 1 || n > 100);
+
+	int size = n;
 
 	printf("input number : ");
 
@@ -27,7 +41,7 @@ int main(void)
 	{
 		for (int j = 0; j < size - i - 1; j++)
 		{
-			if (arr[j + 1] > arr[j])
+			if (arr[j + 1] < arr[j])
 			{
 				int temp = arr[j];
 				arr[j] = arr[j+1];
