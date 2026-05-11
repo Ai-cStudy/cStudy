@@ -1,5 +1,9 @@
 //선택 정렬
 // 정수 N개가 주어졌을 때, 선택 정렬을 이용하여 오름 차순으로 정렬하는 프로그램을 작성하시오.
+#include <stdio.h>
+#include <stdlib.h>
+#pragma warning(disable:4996)
+#include <time.h>
 
 int main(void)
 {
