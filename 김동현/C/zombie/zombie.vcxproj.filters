@@ -15,10 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="main.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="class.cpp">
+    <ClCompile Include="zombie.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
