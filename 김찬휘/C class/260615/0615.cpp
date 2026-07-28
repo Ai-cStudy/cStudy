@@ -26,7 +26,7 @@ using namespace std;
 //	void Qskill() override {
 //		cout << "Light Binding!\n";
 //	}
-//};
+//}; 
 //class Lulu : public Champion {
 //public:
 //	void Qskill() override {
